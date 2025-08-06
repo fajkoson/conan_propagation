@@ -1,0 +1,180 @@
+{
+    "packages": [
+        {
+            "package_name": "zlib",
+            "state": "off"
+        },
+        {
+            "package_name": "bzip2",
+            "state": "off"
+        },
+        {
+            "package_name": "minizip",
+            "state": "off"
+        },
+        {
+            "package_name": "libjpeg",
+            "state": "off"
+        },
+        {
+            "package_name": "libpng",
+            "state": "off"
+        },
+        {
+            "package_name": "libtiff",
+            "state": "off"
+        },
+        {
+            "package_name": "expat",
+            "state": "off"
+        },
+        {
+            "package_name": "xlsxio",
+            "state": "off"
+        },
+        {
+            "package_name": "libxlsxwriter",
+            "state": "off"
+        },
+        {
+            "package_name": "superlu",
+            "state": "off"
+        },
+        {
+            "package_name": "winflexbison",
+            "state": "off"
+        },
+        {
+            "package_name": "crashrpt",
+            "state": "off"
+        },
+        {
+            "package_name": "jasper",
+            "state": "off"
+        },
+        {
+            "package_name": "benchmark",
+            "state": "off"
+        },
+        {
+            "package_name": "argparse",
+            "state": "off"
+        },
+        {
+            "package_name": "msys2",
+            "state": "off"
+        },
+        {
+            "package_name": "xapian-core",
+            "state": "off"
+        },
+        {
+            "package_name": "doxygen",
+            "state": "off"
+        },
+        {
+            "package_name": "nlohmann_json",
+            "state": "off"
+        },
+        {
+            "package_name": "json-schema-validator",
+            "state": "off"
+        },
+        {
+            "package_name": "eigen",
+            "state": "off"
+        },
+        {
+            "package_name": "gtest",
+            "state": "off"
+        },
+        {
+            "package_name": "strawberryperl",
+            "state": "off"
+        },
+        {
+            "package_name": "nasm",
+            "state": "off"
+        },
+        {
+            "package_name": "openssl",
+            "state": "off"
+        },
+        {
+            "package_name": "libcurl",
+            "state": "off"
+        },
+        {
+            "package_name": "opencv",
+            "state": "off"
+        },
+        {
+            "package_name": "libiconv",
+            "state": "off"
+        },
+        {
+            "package_name": "libgettext",
+            "state": "off"
+        },
+        {
+            "package_name": "pcre2",
+            "state": "off"
+        },
+        {
+            "package_name": "brotli",
+            "state": "off"
+        },
+        {
+            "package_name": "freetype",
+            "state": "off"
+        },
+        {
+            "package_name": "double-conversion",
+            "state": "off"
+        },
+        {
+            "package_name": "libffi",
+            "state": "off"
+        },
+        {
+            "package_name": "glib",
+            "state": "off"
+        },
+        {
+            "package_name": "harfbuzz",
+            "state": "off"
+        },
+        {
+            "package_name": "sqlite3",
+            "state": "off"
+        },
+        {
+            "package_name": "libpq",
+            "state": "off"
+        },
+        {
+            "package_name": "qt",
+            "state": "off"
+        },
+        {
+            "package_name": "onnxruntime",
+            "state": "off"
+        },
+        {
+            "package_name": "hdf5",
+            "state": "off"
+        },
+        {
+            "package_name": "md4c",
+            "state": "off"
+        },
+        {
+            "package_name": "openal-soft",
+            "state": "off"
+        },
+        {
+            "package_name": "propagation",
+            "state": "on"
+        }
+    ]
+}

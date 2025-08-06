@@ -1,0 +1,236 @@
+{
+    "benchmark": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "crashrpt": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "eigen": [
+        {"options": {"MPL2_only": true}, "settings": {}},
+        {"options": {"MPL2_only": false}, "settings": {}}
+    ],
+    "expat": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "jasper": [
+        {"options": {"shared": false, "with_libjpeg": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false, "with_libjpeg": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "json-schema-validator": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "libcurl": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "opencv": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "superlu": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "xlsxio": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "zlib": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "libxlsxwriter": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "minizip": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "libjpeg": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "libpng": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "libtiff": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "libiconv": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "xapian-core": [
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "bzip2": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "qt": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "gtest": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "openssl": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "libffi": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "brotli": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "pcre2": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "freetype": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "glib": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "double-conversion": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "harfbuzz": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "sqlite3": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "libpq": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "libgettext": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "onnxruntime": [
+        {"options": {"shared": true, "with_cuda": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": true, "with_cuda": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}}
+    ],
+    "doxygen": [
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}}
+    ],
+    "cudnn": [
+        {"options": {}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {}, "settings": {"build_type": "Debug"}}
+    ],
+    "cudatoolkit": [
+        {"options": {}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {}, "settings": {"build_type": "Debug"}}
+    ],
+    "hasp": [
+        {"options": {}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {}, "settings": {"build_type": "Debug"}}
+    ],
+    "hdf5": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "libtorch": [
+        {"options": {}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {}, "settings": {"build_type": "Debug"}}
+    ],
+    "winflexbison": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "md4c": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "openal-soft": [
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": false}, "settings": {"build_type": "Debug"}},
+        {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
+    ],
+    "propagation": [
+        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": true}, "settings": {"build_type": "Debug"}}
+    ]
+}
