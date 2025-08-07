@@ -1,4 +1,4 @@
 sources:
-  "0.1":
+  "0.1.0":
     url: "https://github.com/fajkoson/propagation/archive/refs/tags/v0.1.tar.gz"
     sha256: "50FD56AB5D89FDA1846BDC5501ED4BEFBD7389FB3B7482A2F60ADA0BA04ED79A"
