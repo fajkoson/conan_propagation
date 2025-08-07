@@ -34,10 +34,15 @@ class PropagateConan(ConanFile):
         get(self, **self.conan_data["sources"][self.version], strip_root=True)
 
     def generate(self):
+        # But it won’t make this variable available in the consumer's CMakeLists.txt, it works only in current project
         tc = CMakeToolchain(self)
         tc.variables["BUILD_SHARED_LIBS"] = self.options.shared
         tc.variables["PROPAGATE_BUILD_EXECUTABLE"] = self.options.build_executable
+        tc.variables["CMAKE_INSTALL_BINDIR"] = "bin"
+        tc.variables["CMAKE_INSTALL_LIBDIR"] = "lib"
+        tc.variables["CMAKE_INSTALL_INCLUDEDIR"] = "include"
         tc.generate()
+
 
     def build_id(self):
         del self.info_build.settings.compiler
@@ -49,34 +54,27 @@ class PropagateConan(ConanFile):
         cmake.build()
 
     def package(self):
-        # Copy header
-        copy(
-            self,
-            pattern="propagate.h",
-            dst=os.path.join(self.package_folder, "include"),
-            src=os.path.join(self.source_folder, "include"),
-        )
-
-        # MSVC build output folder
         build_type_folder = os.path.join(self.build_folder, str(self.settings.build_type))
 
-        # Copy library artifacts
-        copy(self, "*.lib", dst=os.path.join(self.package_folder, "lib"), src=build_type_folder, keep_path=False)
-        #copy(self, "*.exp", dst=os.path.join(self.package_folder, "lib"), src=build_type_folder, keep_path=False)
+        include_dir = os.path.join(self.package_folder, "include")
+        lib_dir = os.path.join(self.package_folder, "lib")
+        bin_dir = os.path.join(self.package_folder, "bin")
+        cmake_dir = os.path.join(self.package_folder, "lib", "cmake", self.name)
 
-        # Copy runtime artifacts
-        copy(self, "*.dll", dst=os.path.join(self.package_folder, "bin"), src=build_type_folder, keep_path=False)
-        copy(self, "*.pdb", dst=os.path.join(self.package_folder, "bin"), src=build_type_folder, keep_path=False)
+        os.makedirs(include_dir, exist_ok=True)
+        os.makedirs(lib_dir, exist_ok=True)
+        os.makedirs(bin_dir, exist_ok=True)
+        os.makedirs(cmake_dir, exist_ok=True)
 
-        # Copy executable only if enabled
+        copy(self, "propagate.h", dst=include_dir, src=os.path.join(self.source_folder, "include"))
+        copy(self, "*.lib", dst=lib_dir, src=build_type_folder, keep_path=False)
+        copy(self, "*.dll", dst=bin_dir, src=build_type_folder, keep_path=False)
+        copy(self, "*.pdb", dst=bin_dir, src=build_type_folder, keep_path=False)
+
         if self.options.build_executable:
-            copy(self, "propagate_exec.exe", dst=os.path.join(self.package_folder, "bin"), src=build_type_folder, keep_path=False)
+            copy(self, "propagate_exec.exe", dst=bin_dir, src=build_type_folder, keep_path=False)
 
-        # Generate CMake helper
-        self._create_cmake_module_variables(
-            os.path.join(self.package_folder, self._module_file_rel_path)
-        )
-
+        self._create_cmake_module_variables(os.path.join(cmake_dir, "propagate.cmake"))
 
 
     def _create_cmake_module_variables(self, module_file):
