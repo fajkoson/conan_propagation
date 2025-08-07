@@ -230,7 +230,7 @@
         {"options": {"shared": false}, "settings": {"build_type": "RelWithDebInfo"}}
     ],
     "propagation": [
-        {"options": {"shared": true}, "settings": {"build_type": "RelWithDebInfo"}},
-        {"options": {"shared": true}, "settings": {"build_type": "Debug"}}
+        {"options": {"shared": true, "build_executable": true}, "settings": {"build_type": "RelWithDebInfo"}},
+        {"options": {"shared": true, "build_executable": true}, "settings": {"build_type": "Debug"}}
     ]
 }

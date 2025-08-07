@@ -49,6 +49,7 @@ class PropagateConan(ConanFile):
         cmake.build()
 
     def package(self):
+        build_type_folder = os.path.join(self.build_folder, str(self.settings.build_type))
         copy(
             self,
             "propagate.h",
@@ -59,20 +60,30 @@ class PropagateConan(ConanFile):
             self,
             "*.dll",
             dst=os.path.join(self.package_folder, "bin"),
-            src=self.build_folder,
+            src=build_type_folder,
+            keep_path=False,
         )
         copy(
             self,
             "*.lib",
             dst=os.path.join(self.package_folder, "lib"),
-            src=self.build_folder,
+            src=build_type_folder,
+            keep_path=False,
+        )
+        copy(
+            self,
+            "*.pdb",
+            dst=os.path.join(self.package_folder, "bin"),
+            src=build_type_folder,
+            keep_path=False,
         )
         if self.options.build_executable:
             copy(
                 self,
                 "propagate_exec*",
                 dst=os.path.join(self.package_folder, "bin"),
-                src=self.build_folder,
+                src=build_type_folder,
+                keep_path=False,
             )
         self._create_cmake_module_variables(
             os.path.join(self.package_folder, self._module_file_rel_path)
